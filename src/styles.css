@@ -1,0 +1,22 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    @font-face {
+        font-family: copyright;
+        font-weight: 400;
+        src: url(fonts/20806.ttf) format("woff");
+    }
+}
+@layer utilities {
+    .tw-font-copyright{
+        font-family: copyright;
+    }
+    .tw-text-shadow-yellow{
+        text-shadow: 4px 0px 0px #fed100;
+    }
+}

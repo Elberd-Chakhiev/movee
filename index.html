@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="/path/to/tailwind.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="compiled.css">
+    <!-- <link rel="stylesheet" href="src/styles.css"> -->
+</head>
+<body>
+    <header class="tw-bg-yellow tw-mx-auto">
+
+        <div class="tw-w-full tw-h-full tw-bg-dark tw-fixed tw-top-0 tw-right-0 tw-bg-opacity-75 menu tw-hidden tw-z-50" id="menu">
+            <div class=" sm:tw-w-1/3 tw-w-2/3 tw-bg-yellow tw-fixed tw-top-0 tw-right-0 tw-h-full tw-z-50" >
+                <div class="tw-absolute tw-right-0 tw-top-0 tw-z-20 tw-w-auto tw-mx-8 tw-my-8 tw-text-black cursor-pointer tw-font-bold tw-text-5xl" id="close">	&times;</div>
+                <ul class="tw-flex tw-fixedtw-justify-between tw-flex-col tw-px-8 tw-py-12">
+                <li class=" tw-py-2"> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Цены</a> </li>
+                <li class=" tw-py-2"> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Автопарк</a> </li>
+                <li class=" tw-py-2"> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Отзывы</a> </li>
+                <li class=" tw-py-2"> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Контакты</a> </li>
+            </ul>
+            <div class="lg:tw-hidden tw-block tw-px-8">
+                <a href="tel:8(800)-080-12-13" class="tw-text-black tw-dark-color tw-font-montserrat tw-font-semibold tw-not-italic tw-text-base tw-underline">8(800)-080-12-13</a>
+            </div>
+        </div>
+    </div>
+        <div class="xl:tw-max-w-7xl  tw-max-w-90p tw-mx-auto tw-pt-16 tw-pt-6 lg:tw-px-8">
+            <div class="tw-flex tw-justify-between tw-items-center">
+                <div class="md:tw-w-28 tw-w-16">
+                    <a href="#"><img src="img/logo.png" alt=""></a>    
+                </div>
+
+                    <nav class="tw-hidden lg:tw-block tw-w-md tw-max-w-md tw-w-full">
+                        <ul class="tw-flex tw-justify-between">
+                            <li> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Цены</a> </li>
+                            <li> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Автопарк</a> </li>
+                            <li> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Отзывы</a> </li>
+                            <li> <a href="#" class="tw-dark-color tw-font-medium tw-not-italic tw-font-montserrat tw-text-lg tw-text-black">Контакты</a> </li>
+                        </ul>
+                    </nav>
+
+                <div class="tw-hidden lg:tw-block">
+                    <a href="tel:8(800)-080-12-13" class="tw-text-black tw-dark-color tw-font-montserrat tw-font-semibold tw-not-italic tw-text-2xl tw-underline">8(800)-080-12-13</a>
+                </div>
+                <div class="tw-text-black tw-cursor-pointer lg:tw-hidden tw-w-11 tw-h-5 tw-flex tw-flex-col tw-justify-between" id="trigger">
+                    <div class="tw-border-black tw-border-1 tw-h-0.5 tw-bg-black">  </div>
+                    <div class="tw-border-black tw-border-1 tw-h-0.5 tw-bg-black"></div>
+                    <div class="tw-border-black tw-border-1 tw-h-0.5 tw-bg-black"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="tw-bg-yellow tw-w-full">
+        <div class="tw-max-w-7xl xl:tw-w-7xl tw-mx-auto tw-pt-4 tw-flex tw-justify-center lg:tw-justify-start tw-relative 3xs:tw-px-5 2xl:tw-px-0">
+
+            <div class="tw-flex tw-flex-col tw-not-italic tw-font-montserrat tw-text-black lg:tw-mr-16 tw-pb-10 lg:tw-pb-0 tw-items-center lg:tw-items-start tw-w-90p lg:tw-w-auto">
+                <h1 class="lg:tw-text-7xl 2xs:tw-text-5xl tw-text-3xl tw-max-w-md tw-font-bold lg:tw-leading-126p tw-leading-131p lg:tw-pt-12 lg:tw-block tw-text-center lg:tw-text-left">Квартирные переезды </h1>
+                <h2 class="tw-font-semibold lg:tw-text-30px tw-text-lg 2xs:tw-text-2xl lg:tw-pt-6 tw-pt-1.5 lg:tw-pb-12 lg:tw-block">По Москве и области</h2>
+                <div class="lg:tw-max-w-96 tw-relative tw-mx-auto lg:tw-mx-0 tw-z-10 tw-flex tw-flex-col tw-items-center tw--mt-8 lg:tw-mt-0"> 
+                    <div class="lg:tw-hidden 3xs:tw-block tw--mb-26px">
+                        <img src="img/man.png" alt="">
+                    </div>
+                    <button class="tw-text-white tw-bg-red lg:tw-px-30 tw-px-20 tw-py-4 lg:tw-max-w-96 tw-z-30 tw-max-w-72 tw-mx-auto  fullxs:tw-max-w-277px fullxs:tw-mx-auto tw-min-w-90p lg:tw-min-w-0"> <a href="#">Заказать</a> </button>
+
+                </div>
+
+                <div class="lg:tw-flex tw-justify-between tw-items-center tw-mt-20 tw-hidden">
+
+                    <div class="tw-flex tw-items-center tw-font-montserrat tw-text-base tw-text-black">
+                        <div class="tw-mr-2.5"> <img src="img/minivan1.svg" alt=""> </div>
+                        <div class="tw-w-20">Более 800
+                            переездов</div>
+                    </div>
+
+                    <div class="tw-flex tw-items-center  tw-px-7">
+                        <div class="tw-mr-2.5"> <img src="img/minivan2.svg" alt=""> </div>
+                        <div class="tw-w-20">Бережная 
+                            упаковка</div>
+                    </div>
+
+                    <div class="tw-flex tw-items-center">
+                        <div class="tw-mr-2.5"> <img src="img/minivan3.svg" alt=""> </div>
+                        <div class="tw-w-20">Фиксированная
+                            цена</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="tw-z-20 lg:tw-max-w-full lg:tw-max-h-full lg:tw-block tw-hidden">
+                <img src="img/man.png" alt="">
+            </div>
+
+
+            <div class="tw-absolute tw-right-0 tw-top-125px tw-hidden lg:tw-block tw-pr-4">
+                <img src="img/minivan.png" alt="">
+            </div>
+
+
+            <!-- for phone -->
+
+
+        </div>
+    </section>
+
+
+<!-- How does this happen?======================How does this happen?======================How does this happen?======================How does this happen?======================How does this happen?How does this happen?======================How does this happen?======================How does this happen?How does this happen?======================How does this happen?======================How does this happen?-->
+    
+    <section class="tw-max-w-7xl tw-mx-auto">
+
+
+
+        <div class="tw-flex tw-flex-col tw-max-w-5xl 2xl:tw-w-5xl tw-mx-auto lg:tw-px-0 tw-px-4 tw-grid-flow-col tw-grid-cols-2 tw-grid-rows-2">
+            <h2 class="tw-text-center tw-pt-24 tw-pb-14 tw-font-montserrat tw-font-semibold tw-text-3xl tw-text-black">Как это происходит?</h2>
+
+            <div class="tw-grid tw-grid-flow-col lg:tw-grid-cols-2 tw-grid-col-1 lg:tw-grid-rows-2 tw-grid-rows-4 tw-gap-x-28 tw-gap-y-12 ">
+
+                <div class="tw-order-0 tw-flex lg:tw-justify-between tw-justify-around  tw-mx-auto lg:tw-mx-0 tw-items-center lg:tw-items-start tw-max-h-auto tw-h-20 lg:tw-h-auto">
+                    <div class="3xs:tw-mr-7 tw-mr-6 tw-text-6xl tw-font-copyright tw-text-shadow-yellow"> 01</div>
+                    <div class="tw-flex tw-justify-between tw-flex-col tw-pl-2  lg:tw-w-96 lg:tw-max-w-96 tw-w-40"> 
+                        <h3 class="tw-font-montserrat tw-font-normal lg:tw-font-medium lg:tw-text-xl tw-text-base tw-text-black lg:tw-pb-4">Оценка объема предстоящих работ</h3> 
+                        <p class="tw-hidden lg:tw-block tw-font-normal tw-font-base tw-text-black">
+                            Стоимость переезда зависит от количества комнат, вещей и мебели. 
+                        </p> 
+                    </div>
+                </div>
+
+                
+                <div class="lg:tw-order-2 tw-order-0 tw-flex lg:tw-justify-between tw-justify-around  tw-mx-auto lg:tw-mx-0 tw-max-h-auto tw-h-20 lg:tw-h-auto tw-items-center lg:tw-items-start">
+                    <div class="3xs:tw-mr-7 tw-mr-6 tw-text-6xl tw-font-copyright tw-text-shadow-yellow"> 02</div>
+                    <div class="tw-flex lg:tw-justify-between tw-flex-col tw-pl-2  lg:tw-w-96 lg:tw-max-w-96 tw-w-40 tw-justify-center">
+                        <h3 class="tw-font-montserrat tw-font-normal lg:tw-font-medium lg:tw-text-xl tw-text-base  tw-text-black  lg:tw-pb-4">Погрузка и транспортировка вещей</h3> 
+                        <p class="tw-hidden lg:tw-block tw-font-normal tw-font-base tw-text-black">
+                            В нашем автопарке имеются машины, подходящие для мебели любых габаритов.
+                        </p> 
+                    </div>
+                </div>
+                <div class="lg:tw-order-1  tw-order-0  tw-flex lg:tw-justify-between tw-justify-around tw-mx-auto lg:tw-mx-0 tw-max-h-auto tw-h-20 lg:tw-h-auto tw-items-center lg:tw-items-start">
+                    <div class="3xs:tw-mr-7 tw-mr-6 tw-text-6xl tw-font-copyright tw-text-shadow-yellow"> 03 </div>
+                    <div class="tw-flex tw-justify-center lg:tw-justify-between tw-flex-col  lg:tw-w-96 lg:tw-max-w-96 tw-w-40 lg:tw-items-start"> 
+                        <h3 class="tw-font-montserrat tw-font-normal lg:tw-font-medium lg:tw-text-xl tw-text-base  tw-text-black lg:tw-pb-4">Упаковка вещей </h3> 
+                        <p class="tw-hidden lg:tw-block tw-font-normal tw-font-base tw-text-black ">
+                            Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно.  
+                        </p> 
+                    </div>
+                </div>
+                
+                <div class="lg:tw-order-3  tw-order-0  tw-flex lg:tw-justify-between tw-justify-around tw-max-w-96 tw-mx-auto lg:tw-mx-0  tw-max-h-auto tw-h-20 lg:tw-h-auto tw-items-center lg:tw-items-start">
+                    <div class="3xs:tw-mr-7 tw-mr-6 tw-text-6xl tw-font-copyright tw-text-shadow-yellow"> 04</div>
+                    <div class="tw-flex tw-justify-between tw-flex-col tw-pl-2 lg:tw-w-96 lg:tw-max-w-96 tw-w-40"> 
+                        <h3 class="tw-font-montserrat tw-font-normal lg:tw-font-medium lg:tw-text-xl tw-text-base  tw-text-black lg:tw-pb-4">Распаковка и расстановка мебели</h3> 
+                        <p class="tw-hidden lg:tw-block tw-font-normal tw-font-base tw-text-black">
+                            Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.
+                        </p> 
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- How does this happen?======================How does this happen?======================How does this happen?======================How does this happen?======================How does this happen?How does this happen?======================How does this happen?======================How does this happen?How does this happen?======================How does this happen?======================How does this happen?-->
+
+    <section class="tw-max-w-7xl tw-mx-auto tw-mt-24">
+        <div class="tw-text-center lg:tw-pb-4 tw-pt-14 lg:tw-pt-0 tw-font-montserrat tw-font-semibold tw-text-3xl tw-text-black tw-bg-gray-50 lg:tw-bg-white ">Цены</div>
+        <div class="tw-text-center tw-pb-4 tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-hidden lg:tw-block tw-mb-14">Фиксированная стоимость на переезд под ключ  </div>
+
+        <div class="tw-flex tw-justify-between lg:tw-flex-row tw-flex-col tw-items-center tw-px-4 tw-bg-gray-50 lg:tw-bg-white">
+
+
+            <div class="lg:tw-box-border lg:tw-border lg:tw-border-gray-200 tw-text-center tw-text-black lg:tw-w-1/3 px lg:tw-max-w-1/3 tw-w-full tw-max-w-auto lg:tw-mt-0 tw-border-0">
+                <div class="md:tw-mt-20 tw-mt-10 tw-text-center tw-pb-4 tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black ">1-комнатная кв-ра  </div>
+                <div class="md:tw-mt-6 tw-mt-6">
+                    <div class=" tw-font-normal tw-font-base tw-text-black">1 фургон </div>
+                    <div class="md:tw-py-6 tw-py-4  tw-font-normal tw-font-base tw-text-black">2 грузчика</div>
+                    <div class="tw-font-normal tw-font-base tw-text-black">Переезд за 4 часа</div>
+                </div>
+                <div class="md:tw-mt-6 md:tw-mb-12 md:tw-mt-12 md:tw-mb-10 tw-mt-10 tw-mb-12 tw-font-semibold tw-text-3xl">8 490₽  </div>
+                 <button class="md:tw-px-20 md:tw-py-3.5 3xs:tw-px-24 tw-py-4 tw-px-14 lg:tw-mb-20 tw-bg-yellow tw-text-xl tw-font-medium "> <a href="#">Заказать</a> </button>
+
+            </div>
+
+            <div id="hidntblock1" class="tw-hidden lg:tw-block lg:tw-box-border lg:tw-mx-6 tw-mx-0 lg:tw-border lg:tw-border-yellow-300 tw-text-center tw-text-black lg:tw-w-1/3 px lg:tw-max-w-1/3 tw-w-full tw-max-w-auto tw-mt-10 lg:tw-mt-0 tw-border-0 tw-border-0">
+                <div class="md:tw-mt-20 tw-mt-10 tw-text-center tw-pb-4  tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black ">2-комнатная кв-ра  </div>
+                <div class="md:tw-mt-6 tw-mt-6">
+                    <div class=" tw-font-normal tw-font-base tw-text-black">1 газель - 3 метра </div>
+                    <div class="md:tw-py-6 tw-py-4  tw-font-normal tw-font-base tw-text-black">2 грузчика</div>
+                    <div class="tw-font-normal tw-font-base tw-text-black">Переезд за 4 часа</div>
+                </div>
+                <div class="md:tw-mt-6 md:tw-mb-12 md:tw-mt-12 md:tw-mb-10 tw-mt-10 tw-mb-12 tw-font-semibold tw-text-3xl">10 990₽  </div>
+                 <button class="md:tw-px-20 md:tw-py-3.5 3xs:tw-px-24 tw-py-4 tw-px-14 lg:tw-mb-20 tw-bg-yellow tw-text-xl tw-font-medium "> <a href="#">Заказать</a> </button>
+
+            </div>
+
+
+            <div id="hidntblock2" class="tw-hidden lg:tw-block  lg:tw-box-border lg:tw-border lg:tw-border-gray-200 tw-text-center tw-text-black lg:tw-w-1/3 px lg:tw-max-w-1/3 tw-w-full tw-max-w-auto tw-mt-10 lg:tw-mt-0 tw-border-0 tw-border-0">
+                <div class="md:tw-mt-20 tw-mt-10 tw-text-center tw-pb-4 tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black ">3-комнатная кв-ра  </div>
+                <div class="md:tw-mt-6">
+                    <div class=" tw-font-normal tw-font-base tw-text-black">1 газель - 4 метра</div>
+                    <div class="md:tw-py-6 tw-py-4   tw-font-normal tw-font-base tw-text-black">2 грузчика</div>
+                    <div class="tw-font-normal tw-font-base tw-text-black">Переезд за 6 часа</div>
+                </div>
+                <div class="md:tw-mt-6 md:tw-mb-12 md:tw-mt-12 md:tw-mb-10 tw-mt-10 tw-mb-12 tw-font-semibold tw-text-3xl">16 490₽  </div>
+                 <button class="md:tw-px-20 md:tw-py-3.5 3xs:tw-px-24 tw-py-4 tw-px-14 lg:tw-mb-20 tw-bg-yellow tw-text-xl tw-font-medium "> <a href="#">Заказать</a> </button>
+
+            </div>
+
+
+
+        </div>
+        <div id="triggerprices" class="tw-text-center lg:tw-hidden tw-pt-4 tw-pb-12 tw-text-base tw-font-medium tw-underline tw-bg-gray-50 lg:tw-bg-white">Все цены</div>
+        <div id="closeprices" class="tw-hidden tw-text-center lg:tw-hidden tw-pt-4 tw-pb-12 tw-text-base tw-font-medium tw-underline tw-bg-gray-50 lg:tw-bg-white">скрыть</div>
+    </section>
+
+
+
+<!-- SLIDER=================================SLIDER=================================SLIDER=================================SLIDER=================================SLIDER=================================SLIDER=================================SLIDER================================= -->
+<section class="tw-max-w-7xl tw-mx-auto lg:tw-mt-28 tw-mt-10 ">
+    <div class="tw-max-w-6xl tw-mx-auto ">
+        <h3 class="tw-text-center tw-font-montserrat tw-font-semibold tw-text-3xl tw-text-black tw-mb-5 md:tw-mb-5">Автопарк</h3>
+        <div class="tw-text-center tw-pb-4 tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-hidden md:tw-block tw-mb-14">10 видов автомобилей от 800 кг до 10 тонн</div>
+        
+        <div class="tw-flex tw-max-w-screen-sm tw-mx-auto tw-mb-10 lg:tw-justify-between tw-justify-around">
+            <button id="yellowBorder1" class="tw-ml-6 focus:tw-border-yellow-300 focus:tw-border-b-2 tw-outline-none tw-text-center lg:tw-py-4 lg:tw-px-14 tw-my-4 lg:tw-my-0 lg:tw-box-border-2 lg:tw-border-2 tw-border-b-2 tw-border-yellow-300 lg:tw-border-gray-200 tw-font-montserrat lg:tw-font-medium tw-text-base xs:tw-text-xl  tw-text-black  lg:tw-no-underline  tw-font-medium focus:tw-outline-none">Газели</button>
+            <button id="yellowBorder2" class="tw-mx-6 focus:tw-border-yellow-300 focus:tw-border-b-2 tw-outline-none tw-text-center lg:tw-py-4 lg:tw-px-12 tw-my-4 lg:tw-my-0 lg:tw-box-border-2 lg:tw-border-2  tw-font-montserrat lg:tw-font-medium  tw-text-base xs:tw-text-xl  tw-text-black lg:tw-no-underline  tw-mx-0 lg:tw-mx-4  focus:tw-outline-none">Каблуки</button>
+            <button id="yellowBorder3" class="tw-mr-6 focus:tw-border-yellow-300 focus:tw-border-b-2 tw-outline-none tw-text-center lg:tw-py-4 lg:tw-px-12 tw-my-4 lg:tw-my-0 lg:tw-box-border-2 lg:tw-border-2 tw-font-montserrat lg:tw-font-medium  tw-text-base xs:tw-text-xl  tw-text-black lg:tw-no-underline   focus:tw-outline-none">Грузовики</button>
+        </div>
+        
+        <div class="tw-flex tw-justify-between tw-items-center tw-flex-wrap xs:tw-flex-nowrap">
+            <button id="prev-btn" class="prev-btn tw-m-4 tw-min-w-8 tw-max-w-8 tw-w-8 tw-hidden lg:tw-block"><img src="img/arrow_left.svg" alt=""></button>
+            <!-- <button id="prev-btn" class="tw-p-4 tw-block lg:tw-hidden tw-absolute tw-left-0 tw-top-0"><img src="img/arrow_left.svg" alt=""></button> -->
+            <!-- <button id="next-btn" class="tw-p-4 tw-block lg:tw-hidden tw-absolute tw-right-0 tw-top-0"><img src="img/arrow_right.svg" alt=""></button> -->
+            <div id="containerSlider" class="slider tw-mx-auto lg:tw-mx-0 tw-order-first xs:tw-order-none">
+                    <div id="containerTrack" class="tw-px-4 sm:tw-px-0">
+                        <div id="gazelle" class="tw-flex tw-items-center tw-min-w-full tw-z-10 slider-item tw-justify-between tw-flex-col lg:tw-flex-row">
+                            <div class="lg:tw-mr-28 tw-mr-0 tw-order-1 lg:tw-order-0 tw-order-1 lg:tw-order-first lg:block tw-flex lg:tw-items-start tw-flex-col tw-items-center tw-min-w-90p  lg:tw-min-w-0">
+                                <div class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-hidden lg:tw-block">Газель 3 метра </div>
+                                <div class="tw-font-montserrat tw-font-semibold tw-text-base xs:tw-text-2xl tw-text-black tw-self-center tw-block lg:tw-hidden tw-py-8">
+                                    
+                                    Газель 3 метра / 1,5 тонны  
+                                    <div class="tw-flex lg:tw-hidden tw-w-20 tw-justify-between tw-mx-auto tw-mt-7">
+                                        <div class="tw-border-2 tw-border-yellow-400 tw-rounded-full tw-w-5 tw-h-5 tw-flex tw-justify-center tw-items-center">
+                                        <div class="tw-border tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 "> </div>
+                                    </div>
+                                    
+                                    <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 tw-m-1.5"> </div>
+                                    <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 tw-m-1.5"> </div>
+                                </div>
+                            </div>
+                            <div class="tw-mt-10 tw-mb-9 tw-hidden lg:tw-block tw-hidden lg:tw-block">
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Ширина 2 м</div>
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Высота 2 м</div>
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Объем 16 м³</div>
+                                <div class="tw-flex tw-items-center"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Грузоподъемность 1,5 т</div>
+                            </div>
+                            <button class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-bg-yellow tw-py-3  xs:tw-px-20 lg:tw-px-12 tw-px-0 tw-min-w-full lg:tw-min-w-auto">Заказать</button>
+                        </div>
+                        <div class=""><img src="img/gazelle.png" alt=""></div>
+                    </div>
+                    
+                    
+
+
+                        <div id="cablook" class="tw-flex tw-items-center tw-min-w-full tw-z-10 slider-item tw-justify-between tw-flex-col lg:tw-flex-row ">
+                            <div class="lg:tw-mr-28 tw-mr-0 tw-order-1 lg:tw-order-0 tw-order-1 lg:tw-order-first lg:block tw-flex lg:tw-items-start tw-flex-col tw-items-center tw-min-w-90p lg:tw-min-w-0">
+                            <div class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-hidden lg:tw-block">Каблук 3 метра </div>
+                            <div class="tw-font-montserrat tw-font-semibold tw-text-base xs:tw-text-2xl tw-text-black tw-self-center tw-block lg:tw-hidden tw-py-8"">
+                                
+                                Каблук 3 метра / 1,5 тонны  
+                                <div class="tw-flex lg:tw-hidden tw-w-20 tw-justify-between tw-mx-auto tw-mt-7">
+                                    
+                                    <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 tw-m-1.5"> </div>
+                                    <div class="tw-border-2 tw-border-yellow-400 tw-rounded-full tw-w-5 tw-h-5 tw-flex tw-justify-center tw-items-center">
+                                        <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 "> </div>
+                                    </div>
+                                    <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 tw-m-1.5"> </div>
+                                </div>
+                            </div>
+                            <div class="tw-mt-10 tw-mb-9 tw-hidden lg:tw-block">
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Ширина 2 м</div>
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Высота 2 м</div>
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Объем 16 м³</div>
+                                <div class="tw-flex tw-items-center"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Грузоподъемность 1,5 т</div>
+                            </div>
+                            <button class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-bg-yellow tw-py-3 xs:tw-px-20 lg:tw-px-12 tw-px-0 tw-min-w-full lg:tw-min-w-auto">Заказать</button>
+                        </div>
+                            <div class=""><img src="img/cablook.png" alt=""></div>
+                        </div>
+        
+                        
+
+
+                        <div id="gazelle2" class="tw-flex tw-items-center tw-min-w-full tw-z-10 slider-item tw-justify-between tw-flex-col lg:tw-flex-row">
+                            <div class="lg:tw-mr-28 tw-mr-0 tw-order-1 lg:tw-order-0 tw-order-1 lg:tw-order-first lg:block tw-flex lg:tw-items-start tw-flex-col tw-items-center tw-min-w-90p lg:tw-min-w-0">
+                            <div class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-hidden lg:tw-block">Грузовик 3 метра </div>
+                            <div class="tw-font-montserrat tw-font-semibold tw-text-base xs:tw-text-2xl tw-text-black tw-self-center tw-block lg:tw-hidden tw-py-8"">
+                                Грузовик 3 метра / 1,5 тонны  
+                                <div class="tw-flex lg:tw-hidden tw-w-20 tw-justify-between tw-mx-auto tw-mt-7">
+                                    
+                                    <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 tw-m-1.5"> </div>
+                                    <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 tw-m-1.5"> </div>
+                                    <div class="tw-border-2 tw-border-yellow-400 tw-rounded-full tw-w-5 tw-h-5 tw-flex tw-justify-center tw-items-center">
+                                        <div class="tw-border border-black-500 tw-rounded-full tw-bg-black tw-w-2.5 tw-h-2.5 "> </div>
+                                    </div>
+                                </div>
+                             </div>
+                            <div class="tw-mt-10 tw-mb-9 tw-hidden lg:tw-block">
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Ширина 2 м</div>
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Высота 2 м</div>
+                                <div class="tw-flex tw-items-center tw-mb-7"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Объем 16 м³</div>
+                                <div class="tw-flex tw-items-center"> <div class="tw-mr-4"><img src="img/Vector.svg" alt=""></div> Грузоподъемность 1,5 т</div>
+                            </div>
+                            <button class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-bg-yellow tw-py-3 xs:tw-px-20 xs:tw-px-20 lg:tw-px-12 tw-px-0 tw-min-w-full lg:tw-min-w-auto">Заказать</button>
+                        </div>
+                            <div class=""><img src="img/gazelle2.png" alt=""></div>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+                <button id="next-btn" class="next-btn tw-m-4 tw-min-w-8 tw-max-w-8 tw-w-8 tw-hidden lg:tw-block"><img src="img/arrow_right.svg" alt=""></button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+<!-- SLIDER=================================SLIDER=================================SLIDER=================================SLIDER=================================SLIDER=================================SLIDER=================================SLIDER================================= -->
+
+    
+
+
+<!-- reviews============================= reviews=============================reviews=============================reviews=============================reviews=============================-->
+
+
+<section class="tw-w-full tw-bg-yellow tw-mt-12">
+    <div class="tw-max-w-7xl tw-py-24 tw-mx-auto tw-px-3">
+        <h3 class="tw-text-center tw-font-montserrat tw-font-semibold tw-text-3xl tw-text-black tw-mb-16">Отзывы</h3>
+        <div class="tw-flex tw-justify-center lg:tw-justify-between">
+            
+            <div id="ira" class=" tw-flex tw-flex-col tw-justify-between xl:tw-max-h-80 lg:tw-max-h-96 tw-max-h-auto">
+                <div class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black">Ирина</div>
+                <div class="tw-flex tw-w-40 tw-justify-between tw-items-center tw-pt-2.5 tw-pb-5">
+                    <div class="">24.03.2019</div>
+                    <div class="tw-flex">
+                        <img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt="">
+                    </div>
+                </div>
+
+                <p class="xl:tw-w-96 lg:tw-w-72 tw-w-64 tw-mx-auto lg:tw-mx-0">
+                    Обращение к вам за помощью в переезде оставило только положительные впечатления. 
+                    Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
+                    во двор, он проявил себя как компетентный 
+                    и профессиональный сотрудник, за что ему огромное  
+                    <span id="dots">...</span>
+                    <span id="more" class="tw-hidden">
+                        Обращение к вам за помощью в переезде оставило только положительные впечатления. 
+                        Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
+                        во двор, он проявил себя как компетентный 
+                        и профессиональный сотрудник, за что ему огромное  
+                    </span>
+
+
+                    
+                </p>
+                <button class="tw-mt-5 tw-block tw-underline tw-text-left" id="readBtn">Читать полностью</button>
+                <button class="tw-mt-5 tw-block tw-underline tw-hidden tw-text-left" id="hideBtn">скрыть</button>
+            </div>
+
+
+            <div id="sveta" class=" tw-flex tw-flex-col tw-justify-between xl:tw-max-h-80 tw-max-h-96 tw-hidden lg:tw-flex">
+                <div class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black">Светлана Васильевна </div>
+                <div class="tw-flex tw-w-40 tw-justify-between tw-items-center tw-pt-2.5 tw-pb-5">
+                    <div class="">13.09.2019</div>
+                    <div class="tw-flex">
+                        <img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt="">
+                    </div>
+                </div>
+
+                <p class="xl:tw-w-96 tw-w-72 ">
+                    Сегодня ( 13.09.2019 ) мы переехали. 
+                    Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. 
+                    Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  
+                    Водитель заранее позвонил, 
+                    предупредил, что задерживается.
+                    Когда
+                    и профессиональный сотрудник, за что ему огромное  
+                    <span id="dots2">...</span>
+                    <span id="more2" class="tw-hidden">
+                        Обращение к вам за помощью в переезде оставило только положительные впечатления. 
+                        Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
+                        во двор, он проявил себя как компетентный 
+                        и профессиональный сотрудник, за что ему огромное  
+                    </span>
+
+
+                    
+                </p>
+                <button class="tw-mt-5 tw-block tw-underline tw-text-left" id="readBtn2">Читать полностью</button>
+                <button class="tw-mt-5 tw-block tw-underline tw-hidden tw-text-left" id="hideBtn2">скрыть</button>
+            </div>
+
+
+            <div id="olga" class=" tw-flex tw-flex-col tw-justify-between xl:tw-max-h-80 tw-max-h-96 tw-hidden lg:tw-flex">
+                <div class="tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black">Ольга Петрова</div>
+                <div class="tw-flex tw-w-40 tw-justify-between tw-items-center tw-pt-2.5 tw-pb-5">
+                    <div class="">11.11.2019</div>
+                    <div class="tw-flex">
+                        <img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt=""><img src="img/starsvg.svg" alt="">
+                    </div>
+                </div>
+
+                <p class="xl:tw-w-96 tw-w-72">
+Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
+во двор, он проявил себя как компетентный 
+и профессиональный сотрудник, за что ему огромное         
+                    <span id="dots3">...</span>
+                    <span id="more3" class="tw-hidden">
+                        Обращение к вам за помощью в переезде оставило только положительные впечатления. 
+                        Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
+                        во двор, он проявил себя как компетентный 
+                        и профессиональный сотрудник, за что ему огромное  
+                    </span>
+
+
+                    
+                </p>
+                <button class="tw-mt-5 tw-block tw-underline tw-text-left" id="readBtn3">Читать полностью</button>
+                <button class="tw-mt-5 tw-block tw-underline tw-hidden tw-text-left" id="hideBtn3">скрыть</button>
+            </div>
+
+            <!-- <div>1</div>
+
+            <div>1</div> -->
+
+        </div>
+
+        <div class="tw-mx-auto tw-text-center tw-mt-14 ">
+        <button class="tw-font-medium tw-text-xl tw-text-black tw-border tw-border-gray-800 tw-px-16 tw-py-4" >  <a href="#">Все отзывы</a>  </button>
+    </div>
+    <!-- btn -->
+    </div>
+</section>
+
+
+<!-- reviews============================= reviews=============================reviews=============================reviews=============================reviews=============================-->
+
+
+
+
+    <section class="tw-max-w-7xl tw-mx-auto tw-mt-32">
+        <div class="tw-text-center tw-pb-4 tw-font-montserrat tw-font-semibold tw-text-2xl tw-text-black tw-mb-14">Нас выбрали</div>
+        <div class="tw-grid tw-grid-flow-col lg:tw-grid-col-3 lg:tw-grid-rows-2 sm:tw-grid-col-2 sm:tw-grid-rows-3 tw-grid-col-1 tw-grid-rows-6 tw-w-full tw-gap-x-5 tw-gap-y-24 tw-px-4">
+
+
+            <div class=" tw-flex tw-justify-center tw-items-center">
+                <a class=" tw-block" href="#"><img   src="img/logo1.png" alt=""></a>
+                
+            </div>
+
+            <div class=" tw-flex tw-justify-center tw-items-center">
+                <a class=" tw-block" href="#"><img   src="img/logo2.png" alt=""></a>
+                
+            </div>
+
+            <div class=" tw-flex tw-justify-center tw-items-center">
+                <a class=" tw-block" href="#"><img   src="img/logo3.png" alt=""></a>
+                
+            </div>
+
+            <div class=" tw-flex tw-justify-center tw-items-center">
+                <a class=" tw-block" href="#"><img  src="img/logo4.png" alt=""></a>
+                
+            </div>
+
+            <div class=" tw-flex tw-justify-center tw-items-center">
+                <a class=" tw-block" href="#"><img   src="img/logo5.png" alt=""></a>
+                
+            </div>
+
+            <div class=" tw-flex tw-justify-center tw-items-center">
+                <a class=" tw-block" href="#"><img   src="img/logo6.png" alt=""></a>
+                
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="tw-max-w-7xl tw-mx-auto tw-my-32 tw-px-8">
+        <div class="tw-max-w-5xl tw-mx-auto">
+            <h3 class="tw-font-montserrat tw-font-semibold tw-text-3xl tw-text-black tw-text-center lg:tw-text-left tw-pb-2.5">Закажи  переезд прямо сейчас</h3>
+            <div class="tw-font-montserrat tw-font-normal tw-text-base tw-text-black tw-text-center lg:tw-text-left">Мы перезвоним в течении 10 секунд</div>
+
+            <div>
+                <form action="send.php" method="POST">
+                    <div  class="tw-mt-9 tw-flex lg:tw-items-end tw-items-center tw-justify-between tw-flex-col  lg:tw-flex-row tw-h-56 lg:tw-h-auto">
+                        <div class="tw-flex tw-justify-center tw-w-full lg:tw-w-auto"><input class="tw-border-b-2 tw-border-gray-400 tw-text-xl tw-pb-2.5 tw-w-90p lg:tw-w-72" name="text" type="text" placeholder="Ваше имя" ></div>
+                        <div class="tw-flex tw-justify-center tw-w-full lg:tw-w-auto"><input class="tw-border-b-2 tw-border-gray-400 tw-text-xl tw-pb-2.5 tw-w-90p lg:tw-w-72" name="tel" type="tel" placeholder="Телефон" ></div>
+    
+    
+                        <button type="submit" class="tw-bg-red tw-text-white tw-px-8 tw-py-3.5 tw-font-medium tw-text-xl tw-font-montserrat tw-min-w-90p lg:tw-min-w-0">Перезвонить мне</button>
+                    </div>
+                    <div class="tw-flex tw-justify-center lg:tw-justify-end tw-text-rignt tw-mt-6 tw-text-xs tw-tracking-wide tw-text-black tw-items-center">
+                        <input class="tw-mr-2.5" type="checkbox" name="checkbox">
+                        Даю согласие на обработку данных
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    
+<section class="tw-max-w-full tw-relative">
+    <div class=" tw-absolute tw-bottom-0 lg:tw-inset-y-1/4 lg:tw-w-96 tw-w-full 2xl:tw-left-1/4 lg:tw-ml-20 2xl:tw-ml-0 tw-bg-white tw-p-10 tw-flex tw-flex-col tw-justify-between">
+
+
+            <div class="tw-mw-28 lg:tw-block tw-hidden">
+                <a href="#"><img src="img/logo.png" alt=""></a>    
+            </div>
+
+            <div class="lg:tw-py-10 tw-mx-auto lg:tw-mx-0 lg:tw-w-auto 3xs:tw-w-64 tw-w-56"> 
+                <div class=" tw-flex"> <img src="img/Vector2.svg" class="tw-mr-5 lg:tw-block tw-hidden" alt=""> Москва, Волгоградский пр-т, 38</div>
+                <div class="tw-py-5 tw-flex"> <img src="img/Vector2.svg" class="tw-mr-5 lg:tw-block tw-hidden" alt="">  <a href="tel:88000801213" >8 (800)-080-12-13</a>  </div>
+                <div class=" tw-flex"> <img src="img/Vector2.svg" class="tw-mr-5 lg:tw-block tw-hidden" alt="">  <a href="mailto:hello@movee.ru">hello@movee.ru</a> </div>
+            </div>
+            
+            <div class=" tw-w-36 tw-justify-between tw-items-end tw-self-end lg:tw-flex tw-hidden">
+                <a class="tw-block" href="#"><img src="img/soc1.svg" alt=""></a> 
+                <a class="tw-block" href="#"><img src="img/soc2.svg" alt=""></a> 
+                <a class="tw-block" href="#"><img src="img/soc3.svg" alt=""></a> 
+                <a class="tw-block" href="#"><img src="img/soc4.svg" alt=""></a> 
+            </div>
+
+   
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.501191514041!2d37.705901916097766!3d55.715041702370975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab5269715db59%3A0x3c9ede46f385b391!2z0JLQvtC70LPQvtCz0YDQsNC00YHQutC40Lkg0L_RgC3Rgi4sIDM4LCDQnNC-0YHQutCy0LAsIDEwOTMxNg!5e0!3m2!1sru!2sru!4v1623351959752!5m2!1sru!2sru" width="100%" height="666" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+    <section class="tw-w-full tw-mx-auto tw-bg-yellow">
+        <div class="tw-max-w-7xl tw-mx-auto tw-py-24 tw-px-5">
+
+<div class="tw-flex tw-justify-between lg:tw-flex-row tw-flex-col tw-items-center lg:tw-items-stretch ">
+
+    <div class="tw-flex tw-justify-between tw-flex-col tw-items-center lg:tw-items-stretch tw-h-44 lg:tw-h-auto">
+         <div> <a href="#"><img src="img/logo.png" alt=""></a> </div>
+        <div class=" tw-text-base tw-w-52 lg:tw-text-left tw-text-center"> <a href="#">Политика конфиденциальнности</a> </div> 
+        <div class="tw-w-60 tw-text-base lg:tw-text-left tw-text-center"> <a href="#">Соглашение на обработку персональных данных</a> </div> 
+    </div>
+
+    <div class="tw-h-48 tw-flex tw-flex-col tw-justify-between tw-text-center lg:tw-text-left tw-font-montserrat tw-font-normal tw-text-xl tw-text-black tw-mt-11 lg:tw-mt-0">
+        <div> <a href="#">Главная</a> </div>
+        <div> <a href="#">Цена</a> </div>
+        <div> <a href="#">Автопарк</a> </div>
+        <div> <a href="#">Отзывы</a> </div>
+        <div> <a href="#">Контакты</a> </div>
+    </div>
+
+    <div class="tw-flex tw-justify-between tw-flex-col tw-items-center tw-h-16 tw-mt-11 lg:tw-mt-0">
+        <div class=" tw-w-36 tw-justify-between tw-flex ">
+            <a class="tw-block" href="#"><img src="img/soc1.svg" alt=""></a> 
+            <a class="tw-block" href="#"><img src="img/soc2.svg" alt=""></a> 
+            <a class="tw-block" href="#"><img src="img/soc3.svg" alt=""></a> 
+            <a class="tw-block" href="#"><img src="img/soc4.svg" alt=""></a> 
+        </div>
+        <div class="tw-text-center"><a href="mailto:hello@movee.ru" class="tw-underline tw-font-montserrat tw-font-semibold  tw-text-xl tw-text-black">hello@movee.ru</a></div>
+    </div>
+
+    <div class="lg:tw-w-60 tw-w-full">
+        <button class="tw-w-60 tw-font-montserrat tw-font-semibold  tw-text-xl tw-text-black tw-py-2.5 tw-w-full tw-border tw-border-black tw-mt-16 tw-block lg:tw-hidden"> <a href="#">Заказать</a> </button>
+        <button class="tw-w-60 tw-font-montserrat tw-font-semibold  tw-text-xl tw-text-black tw-py-2.5 tw-px-8 tw-border tw-border-black tw-mb-1.5 tw-hidden lg:tw-block"> <a href="#">Обратный звонок</a> </button>
+        <div class="tw-text-center"> <a href="tel:88000801213" class="tw-underline tw-font-montserrat tw-font-semibold tw-text-xl tw-text-black tw-hidden lg:tw-block">8 (800)-080-12-13</a> </div>
+    </div>
+
+
+</div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
